@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 🧠 Cancer Type Detection from MR Images using Deep Learning
 
-## Getting Started
+This project is a web-based application that allows users to **analyze MR images and predict cancer types** using pretrained deep learning models such as **MobileNet**. It was developed with **Next.js** for the frontend and can handle multiple cancer categories like brain, breast, lung, and more.
 
-First, run the development server:
+### 🚀 Features
+
+* 🔍 **Cancer Type Selection Modal**
+  Users can select the type of cancer they want to analyze (Brain, Breast, Cervical, Kidney, etc.).
+
+* 📁 **MR Image Upload & Preview**
+  Upload MR images and see a preview before prediction.
+
+* 🤖 **Model Selection**
+  Supports different model architectures (e.g., MobileNet) for flexibility and comparison.
+
+* 🌐 **Multilingual Support**
+  Easily switch between languages (English, Turkish, etc.).
+
+* 🧠 **AI-Powered Predictions**
+  Backend-integrated AI model processes the uploaded image and returns the prediction result.
+
+---
+
+### 🛠️ Tech Stack
+
+* **Frontend:** Next.js (React)
+* **Styling:** CSS Modules
+* **AI Model:** TensorFlow\.js or API-integrated backend model
+* **File Upload:** HTML FileReader + FormData
+* **Language Support:** i18n (custom implementation or next-i18next)
+
+---
+
+### 📦 How to Run Locally
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/cancer-detection-app.git
+cd cancer-detection-app
+
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ⚠️ Disclaimer
 
-## Learn More
+> This project is for educational and prototyping purposes only. It is not intended for clinical use.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
